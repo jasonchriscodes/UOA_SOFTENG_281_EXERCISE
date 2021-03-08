@@ -10,9 +10,15 @@ class Main {
 			return null;
 		}
 		
-		//...
+		// make an initial "reasonable assumption" of what is the longest word
+		// it is safe to assume there's at least one element because we checked the size above
+		String longestWordSoFar = words.get(0); 
 		
-		return "SOMETHING ELSE";
+		
+		// ...
+		
+		// return the "best we have found"
+		return longestWordSoFar;
 	}
 
 	public static void main(String[] args) {
