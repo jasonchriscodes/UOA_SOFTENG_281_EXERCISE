@@ -3,7 +3,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		int[] numbers = { 2, 4, 3, 5, 6 };
+		int[] numbers = { };
 		
 		int sum = 0;
 		
@@ -11,6 +11,10 @@ public class Main {
 //			sum = sum + element;
 			sum += element;		// short cut 
 		}
+		
+		if (numbers.length == 0) {
+			System.out.println("empty");
+		} 
 		
 		if (sum > 20) {
 			System.out.println("over");
