@@ -8,14 +8,17 @@ class Main {
 		// make assumption like in the last activity
 		int numberOfWordsFound = 0;
 		
-		// fix our assumption stage.. 
-		
 		// split the string
 		String[] brokenParts = keywords.split(";");
 		
 		for (String part: brokenParts) {
 			String cleanedPart = part.trim();
-			System.out.println(cleanedPart);
+//			System.out.println(cleanedPart);
+
+			// update our assumption.. 
+			if (cleanedPart.length() > 0) {
+				numberOfWordsFound++;
+			}
 		}
 		
 		// return our assumption
