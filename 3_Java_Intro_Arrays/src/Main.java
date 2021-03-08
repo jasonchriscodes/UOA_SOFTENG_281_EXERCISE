@@ -33,18 +33,17 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("Hello");
+//		System.out.println("Hello");
+//		
+//		String paramToSend = "Hello";
+//		System.out.println(paramToSend);
 		
-		String paramToSend = "Hello";
-		System.out.println(paramToSend);
 		
-		
-		
-//		int[] paramToSend = new int[] { 3, 34, 566, 5,32};
-//	    sumOfArray(paramToSend);
+		int[] paramToSend = { 3, 34, 566, 5,32};
+	    sumOfArray(paramToSend);
 //	    System.out.println("The first element in the array is: " + paramToSend[0]);
 	    
-//	    sumOfArray(new int[] { 3, 34, 566, 5,32});
+	    sumOfArray(new int[] { 3, 34, 566, 5,32});
 	    
 //		sumOfArray(new int[]{});
 //	    sumOfArray(new int[]{23});
