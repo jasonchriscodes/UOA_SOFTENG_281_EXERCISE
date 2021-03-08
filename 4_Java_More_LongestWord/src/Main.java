@@ -14,8 +14,14 @@ class Main {
 		// it is safe to assume there's at least one element because we checked the size above
 		String longestWordSoFar = words.get(0); 
 		
-		
-		// ...
+		// Now we "fix" our assumption by reviewing what's actually in the ArrayList
+		for( String currentWord : words ) {
+			
+			// check if current word is actually longer than what we currently think is longest
+			if (currentWord.length() > longestWordSoFar.length()) {
+				longestWordSoFar = currentWord;
+			}
+		}
 		
 		// return the "best we have found"
 		return longestWordSoFar;
