@@ -1,9 +1,9 @@
 
 public class Main {
 	
-	public static void sumOfArray() {
+	public static void sumOfArray(int[] numbers) {
 		
-		int[] numbers = { 2, 3, 4, 34, 2, 34 , 3 };
+//		int[] numbers = { 2, 3, 4, 34, 2, 34 , 3 };
 		
 		int sum = 0;
 		
@@ -31,9 +31,13 @@ public class Main {
 		}
 	}
 	
-	
 	public static void main(String[] args) {
-		sumOfArray();		
+		sumOfArray(new int[]{});
+	    sumOfArray(new int[]{3});
+	    sumOfArray(new int[]{23});
+	    sumOfArray(new int[]{-5});
+	    sumOfArray(new int[]{-3, -2, 1});
+	    sumOfArray(new int[]{2, 4, 8, -2, 1});		
 	}
 	
 }
