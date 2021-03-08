@@ -1,9 +1,6 @@
 
 public class Main {
-	public static void sumOfTwoNumbers() {
-
-		int first = 23;    
-		int second = 5;
+	public static void sumOfTwoNumbers(int first, int second) {
 
 		int sum = first + second;
 		
@@ -17,9 +14,9 @@ public class Main {
 	}
 	
 	public static void main(String[] args) {
-		sumOfTwoNumbers();
-		sumOfTwoNumbers();
-		sumOfTwoNumbers();
+		sumOfTwoNumbers(23, 5);
+		sumOfTwoNumbers(-2, -74);
+		sumOfTwoNumbers(3, 4);
 	}
 	
 }
