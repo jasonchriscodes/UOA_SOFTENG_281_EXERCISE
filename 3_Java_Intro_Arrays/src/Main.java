@@ -14,9 +14,7 @@ public class Main {
 		
 		if (numbers.length == 0) {
 			System.out.println("empty");
-		} 
-		
-		if (sum > 20) {
+		} else if (sum > 20) {
 			System.out.println("over");
 		} else if (sum < 5) {
 			System.out.println("under");
