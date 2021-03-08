@@ -1,3 +1,4 @@
+import logger.Log;
 
 public class Welcome {
 
@@ -6,6 +7,7 @@ public class Welcome {
 		
 		Log.printLine();
 		Log.print("Welcome to " + name);
+		Log.print("Enjoy!");
 		Log.printLine();
 	}
 
