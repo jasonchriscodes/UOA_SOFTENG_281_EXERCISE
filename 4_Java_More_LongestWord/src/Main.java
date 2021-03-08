@@ -14,9 +14,15 @@ class Main {
 		String message = "Hello how are you?";
 		
 //		String substring(int beginIndex);
+
+		System.out.println(message.toUpperCase());
+		System.out.println(message.toLowerCase());
+		System.out.println(message.length());
 		
-		String res = message.substring(3, 5);
-		System.out.println(res);
+//		String res = message.substring(3, 5);
+//		System.out.println(res);
+		
+		
 		
 		if (true ) {
 			return;
