@@ -1,7 +1,7 @@
 
 public class Main {
 	
-	public static void main(String[] args) {
+	public static void sumOfArray() {
 		
 		int[] numbers = { 2, 3, 4, 34, 2, 34 , 3 };
 		
@@ -9,16 +9,16 @@ public class Main {
 		
 		// index-based for-loop... 
 		// still need this style if you need to know the "index" 
-		for ( int index = 0 ; index < numbers.length ; index++ ) {
-			int element = numbers[index];
-			sum += element;	
-			System.out.println("Element at index " + index + " = " + element);
-		}
+//		for ( int index = 0 ; index < numbers.length ; index++ ) {
+//			int element = numbers[index];
+//			sum += element;	
+//			System.out.println("Element at index " + index + " = " + element);
+//		}
 		
 		// foreach style for-loop (nice and elegant when you have collections/arrays)
-//		for ( int element : numbers ) {
-//			sum += element;		 
-//		}
+		for ( int element : numbers ) {
+			sum += element;		 
+		}
 		
 		if (numbers.length == 0) {
 			System.out.println("empty");
@@ -29,7 +29,11 @@ public class Main {
 		} else {
 			System.out.println("Total = " + sum);
 		}
-		
+	}
+	
+	
+	public static void main(String[] args) {
+		sumOfArray();		
 	}
 	
 }
