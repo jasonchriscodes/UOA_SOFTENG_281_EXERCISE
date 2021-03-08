@@ -4,7 +4,12 @@ import java.util.ArrayList;
 class Main {
 
 	public static int countKeywords(String keywords) {
-		return -1;
+		
+		// make assumption like in the last activity
+		int numberOfWordsFound = 0;
+		
+		// return our assumption
+		return numberOfWordsFound;
 	}
 
 	public static void main(String[] args) {
