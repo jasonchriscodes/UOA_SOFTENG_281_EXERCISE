@@ -8,7 +8,8 @@ public class Main {
 		int sum = 0;
 		
 		for ( int element : numbers ) {
-			System.out.println(element);
+//			sum = sum + element;
+			sum += element;		// short cut 
 		}
 		
 		if (sum > 20) {
