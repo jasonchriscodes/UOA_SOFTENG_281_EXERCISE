@@ -14,7 +14,8 @@ class Main {
 		String[] brokenParts = keywords.split(";");
 		
 		for (String part: brokenParts) {
-			System.out.println(part);
+			String cleanedPart = part.trim();
+			System.out.println(cleanedPart);
 		}
 		
 		// return our assumption
