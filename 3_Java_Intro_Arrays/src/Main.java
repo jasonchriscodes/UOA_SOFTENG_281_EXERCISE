@@ -33,10 +33,16 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		int[] paramToSend = new int[] { 3, 34, 566, 5,32};
-	    sumOfArray(paramToSend);
-	    
-	    System.out.println("The first element in the array is: " + paramToSend[0]);
+		System.out.println("Hello");
+		
+		String paramToSend = "Hello";
+		System.out.println(paramToSend);
+		
+		
+		
+//		int[] paramToSend = new int[] { 3, 34, 566, 5,32};
+//	    sumOfArray(paramToSend);
+//	    System.out.println("The first element in the array is: " + paramToSend[0]);
 	    
 //	    sumOfArray(new int[] { 3, 34, 566, 5,32});
 	    
