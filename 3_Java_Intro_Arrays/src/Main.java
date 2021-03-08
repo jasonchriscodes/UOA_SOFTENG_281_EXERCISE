@@ -32,12 +32,19 @@ public class Main {
 	}
 	
 	public static void main(String[] args) {
-		sumOfArray(new int[]{});
-	    sumOfArray(new int[]{3});
-	    sumOfArray(new int[]{23});
-	    sumOfArray(new int[]{-5});
-	    sumOfArray(new int[]{-3, -2, 1});
-	    sumOfArray(new int[]{2, 4, 8, -2, 1});		
+		
+		int[] paramToSend = new int[] { 3, 34, 566, 5,32};
+	    sumOfArray(paramToSend);
+	    
+	    System.out.println("The first element in the array is: " + paramToSend[0]);
+	    
+//	    sumOfArray(new int[] { 3, 34, 566, 5,32});
+	    
+//		sumOfArray(new int[]{});
+//	    sumOfArray(new int[]{23});
+//	    sumOfArray(new int[]{-5});
+//	    sumOfArray(new int[]{-3, -2, 1});
+//	    sumOfArray(new int[]{2, 4, 8, -2, 1});		
 	}
 	
 }
