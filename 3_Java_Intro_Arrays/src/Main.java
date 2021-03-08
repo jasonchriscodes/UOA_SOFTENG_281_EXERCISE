@@ -7,9 +7,13 @@ public class Main {
 		
 		int sum = 0;
 		
-		if (sum > 10) {
+		for ( int element : numbers ) {
+			System.out.println(element);
+		}
+		
+		if (sum > 20) {
 			System.out.println("over");
-		} else if (sum < 0) {
+		} else if (sum < 5) {
 			System.out.println("under");
 		} else {
 			System.out.println("Total = " + sum);
