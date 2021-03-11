@@ -1,17 +1,17 @@
-class Main {
+class Main { // The first letter of class usually should be capital
 	
 	public static void main(String[] args) {
 
-		Pokemon pika = new Pokemon("Pikachu", 10);
-		
-		pika.details();
+		Pokemon pika = new Pokemon("Pikachu", 10); // 'new' creating an instance of pokemon and providing
+		                                           //  some initial value of that pokemon attributes
+		pika.details(); // for that particular pokemon instance I wanted to tell me its details
+		pika.attack(); // then I wanted to do an attack
 		pika.attack();
 		pika.attack();
 		pika.attack();
 		pika.attack();
 		pika.attack();
-		pika.attack();
-		pika.details();
+		pika.details(); // then I wanted to tell me its details again
 		
 		System.out.println();
 
