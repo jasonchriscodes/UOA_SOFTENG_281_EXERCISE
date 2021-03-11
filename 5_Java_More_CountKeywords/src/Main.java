@@ -9,14 +9,14 @@ class Main {
 		int numberOfWordsFound = 0;
 		
 		// split the string
-		String[] brokenParts = keywords.split(";");
+		String[] brokenParts = keywords.split(";"); // .split is to split string around matches of the given regular expression.
 		
-		for (String part: brokenParts) {
-			String cleanedPart = part.trim();
+		for (String part: brokenParts) { // example 1st part means the first keywords
+			String cleanedPart = part.trim(); // .trim returns a copy of the string, with leading and trailing WHITESPACE OMITTED.
 //			System.out.println(cleanedPart);
 
 			// update our assumption.. 
-			if (cleanedPart.length() > 0) {
+			if (cleanedPart.length() > 0) { // > 0 omit the empty string
 				numberOfWordsFound++;
 			}
 		}
