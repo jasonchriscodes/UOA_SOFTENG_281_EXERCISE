@@ -6,6 +6,11 @@ class Main {
 		
 		pika.details();
 		pika.attack();
+		pika.attack();
+		pika.attack();
+		pika.attack();
+		pika.attack();
+		pika.attack();
 		pika.details();
 		
 		System.out.println();

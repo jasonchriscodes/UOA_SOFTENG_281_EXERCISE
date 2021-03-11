@@ -19,6 +19,7 @@ public class Pokemon {
 
 	public void attack() {
 		System.out.println(this.name + " attack!");
+		this.level++;
 	}
 
 }
