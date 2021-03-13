@@ -7,6 +7,12 @@ public class Person {
 	public Person() {
 		firstName = "NoFirstName";
 		lastName = "NoLastName";
+		age = 1;
+	}
+	
+	public Person(String ln) {
+		firstName = "NoFirstNameYet";
+		lastName = ln;
 		age = 0;
 	}
 	
