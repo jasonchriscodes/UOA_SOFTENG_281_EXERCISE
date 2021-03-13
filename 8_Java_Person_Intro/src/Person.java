@@ -5,6 +5,9 @@ public class Person {
 	private int age;
 	
 	public Person() {
+		firstName = "NoFirstName";
+		lastName = "NoLastName";
+		age = 0;
 	}
 	
 	public Person(String fn, String ln, int a) {
@@ -12,11 +15,10 @@ public class Person {
 		lastName = ln;
 		age = a;
 	}
-
+	
 	public void introduceSelf() {
-		System.out.println("Hello, my name is " + firstName + 
+		System.out.println("Hello, my name is " + firstName +
 				" and I am " + age + " years old.");
 	}
-
 }
 
