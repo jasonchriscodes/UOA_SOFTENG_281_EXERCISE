@@ -7,7 +7,7 @@ public class Person {
   private int age;
   private int id;
 
-  // static fields
+  // static fields, is use if method depend on a general instance not a particular instance
   private static int nextID = 0;
   private static int oldestAge = 0;
   private static String oldestPerson = "N/A";
@@ -25,7 +25,8 @@ public class Person {
     }
   }
 
-  // static method
+  // static method, they can operate without requiring an instance.
+  // inside static method can't access any non-static fields & methods
   public static int getPopulation() {
     return nextID;
   }
@@ -61,7 +62,7 @@ public class Person {
     age++;
     System.out.println("Happy Birthday " + firstName + "!");
 
-    if (age > oldestAge) {
+    if (age > oldestAge) { // inside the instance method we are still allowed to access the static field
       oldestAge = age;
       oldestPerson = firstName;
     }
