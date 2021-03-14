@@ -10,20 +10,20 @@ public class Person {
 		this.age = age;
 	}
 
-	public void setFirstName(String newName) {
-		firstName = newName;
+	public void setFirstName(String newName) { // firstName setter (method signature(signature of this method), how we can use that method: the name of the method(setFirstName), 
+		firstName = newName; // the parameter(takes parameter type String), the return type (not expect a return type), is this static or not (not a static method))
 	}
 
-	public void setLastName(String newName) {
-		lastName = newName;
+	public void setLastName(String newName) { // lastName setter (method signature(signature of this method), how we can use that method: the name of the method(setLastName), 
+		lastName = newName; // the parameter(takes parameter type String), the return type (not expect a return type), is this static or not (not a static method))
 	}
 
-	public String getFullName() {
-		String name = firstName + " " + lastName;
+	public String getFullName() { // FullName getter (method signature (signature of this method), how we can use that method: the name of the method(getFullName), 
+		String name = firstName + " " + lastName; // the parameter(takes no parameter), the return type (String), is this static or not (not a static method))
 		return name;
 	}
 
-	public int getAge() {
+	public int getAge() { // getter age
 		return age;
 	}
 

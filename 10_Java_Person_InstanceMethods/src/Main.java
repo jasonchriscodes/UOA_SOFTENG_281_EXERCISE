@@ -9,14 +9,14 @@ class Main {
 	    Save it to a local variable.
 	    And then print it afterwards.
 		 */ 
-		String name = bob.getFullName();
+		String name = bob.getFullName(); // save the variable "Bob" in the name variable
 		System.out.println(name);
 
 		/* 
 	    Call the same getter method, but a different instance (Jenny).
 	    Here, we also print the returned result directly.
 		 */
-		System.out.println(jenny.getFullName());
+		System.out.println(jenny.getFullName()); // not saving the variable, just printed out
 
 		/*
     	Call a getter method to change Bob's name to Bobby.
