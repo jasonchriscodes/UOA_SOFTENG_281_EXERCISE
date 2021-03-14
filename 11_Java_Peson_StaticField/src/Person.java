@@ -10,11 +10,14 @@ public class Person {
   // static field
   private static int nextID = 0;
 
-  public Person(String firstName, String lastName, int age) {
-    this.firstName = firstName;
+  // as soon as this constructor is introduced, the default parameter does not exist anymore because the constructor 
+  // with 3 parameter overwritten the default constructor (Person bob = new Person() unless u explicitly made a 
+  // new constructor with no parameter)
+  public Person(String firstName, String lastName, int age) { 
+    this.firstName = firstName;  
     this.lastName = lastName;
     this.age = age;
-    this.id = nextID;
+    this.id = nextID; // nextID from static field, if static field did not apply the value will be reseted
     nextID++;
   }
 
@@ -36,7 +39,7 @@ public class Person {
     System.out.println("Happy Birthday " + firstName + "!");
   }
 
-  public void introduceSelf() {
+  public void introduceSelf() { // instance method
     System.out.println("Hello, my name is " + firstName + 
       ", I am " + age + " years old, and my ID number is " + id);
   }
