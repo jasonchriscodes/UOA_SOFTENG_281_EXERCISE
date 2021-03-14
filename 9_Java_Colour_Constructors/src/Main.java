@@ -3,7 +3,7 @@ class Main {
 
 		// Colour1:
 		// calls the default constructor of Colour1
-		Colour1 c1 = new Colour1();
+		Colour1 c1 = new Colour1(); 
 		c1.details();
 
 		// Colour2:

@@ -18,8 +18,8 @@ public class Colour3 {
 		this.blue = 255;
 	}
 
-	public Colour3(int red) {
-		this.red = red;
+	public Colour3(int red) { // the parameter should match if u want to use constructor, take one int then change 
+		this.red = red; // red color, blue and green will not be taken any affect
 		// Should explicitly initialise blue
 	}
 

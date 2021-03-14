@@ -5,6 +5,9 @@ public class Colour1 {
 	private int green = 255;
 	private int blue = 255;
 
+//	public Colour1() { // java is doing something like this
+//	}
+	
 	/*
     No constructor is defined, so the Java compiler
     provides us with a default compiler. 

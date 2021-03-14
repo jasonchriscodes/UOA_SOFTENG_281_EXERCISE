@@ -12,8 +12,8 @@ public class Colour2 {
 
     The fields are initialised in the constructor.
 	 */
-	public Colour2() {
-		this.red = 5;
+	public Colour2() { // empty parameter constructor
+		this.red = 5; // using this to refer to fields better habit to prevent future error
 		this.green = 5;
 		this.blue = 5;
 	}
