@@ -12,19 +12,27 @@ public class Colour {
 		this.blue = blue;
 	}
 
-	@Override
-	public boolean equals(Object obj) {
+	@Override // show that this method overriding the one that is default for object (optional but good habbit)
+	// instance method, Object in (Object obj) is an object class
+	public boolean equals(Object obj) { 
 		// exact same instance?
-		if (this == obj) {
+		// check for identity, address of this instance == the address of the other object
+		// for example bob.equaljenny, bob become this and jenny become the other object	
+		if (this == obj) { 
 			return true;
 		}
 
 		// is the other reference null?
+		// this is checking if the other object is null, bob.equalsnul or bob.equalsjenny when jenny 
+		// has not been assigned an instance so jenny equal null previously, this instance per se cannot be
+		// null otherwise we would not be inside this method in the first place, we would get null pointer 
+		// exception before we got the equals method
 		if (obj == null) {
 			return false;
 		}
 
 		// same class type?
+		// check what type of this instance, every type that is not a primitive type is a class type
 		Class typeOfThisInstance = this.getClass();
 		Class typeOfOtherInstance = obj.getClass();
 		if (typeOfThisInstance != typeOfOtherInstance) {
@@ -32,6 +40,7 @@ public class Colour {
 		}
 
 		// Otherwise, they are the same types, so cast the Object to Colour
+		// so now the obj is also a colour type, other is a colour instance
 		Colour other = (Colour) obj;
 
 		// Do the attributes we care about have the same values?
@@ -44,8 +53,14 @@ public class Colour {
 	}
 
 	@Override
+	// check if one colour is equal to a collection of colour, organize a collection of colour
+	// in a range of colour, and check if the one colour matches that range, otherwise skip the check
+	// use for efficientcy purpose, if two instances have the same equals they must have the same hashcode
+	// its okay if 2 instances have the same hashcode
 	public int hashCode() {
 		// definitely not the best hash function, but understanding hashCodes is out of scope at the moment. 
+		// auto generate hashcode --> right click on Colour.java --> Source --> Generate 
+		// hasCode() and equal() and tell what do u care about object to be equal --> Generate
 		return red + green + blue;
 	}
 
