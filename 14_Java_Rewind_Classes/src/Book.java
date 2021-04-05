@@ -19,6 +19,11 @@ public class Book {
 		this.id = nextID;
 		nextID++;
 	}
+	
+	@Override
+    public String toString() {
+		return this.title + " by " + this.author + " (" + this.year + ") has ID " + this.id;
+    }
 
 	
 	/**

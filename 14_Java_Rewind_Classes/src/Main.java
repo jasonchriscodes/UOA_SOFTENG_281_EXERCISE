@@ -12,8 +12,11 @@ class Main {
     Book hp2a = new Book("Harry Potter Chamber Secrets", "J. K. Rowling", 1998, 11.50, 31.95);  // ID: 1
     Book hp2b = new Book("Harry Potter Chamber Secrets", "J. K. Rowling", 1998, 9.50, 31.95);   // ID: 2
     Book phil = new Book("Philosophy 101", "Paul Kleinman", 2013, 8.75, 15.99);                 // ID: 3
-    
-    
+
+    System.out.println(hp1.toString());
+    System.out.println(hp2a.toString());
+    System.out.println(hp2b.toString());
+    System.out.println(phil.toString());
   }
 
 }
