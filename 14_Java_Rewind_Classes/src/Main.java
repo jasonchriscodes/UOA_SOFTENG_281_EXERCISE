@@ -50,15 +50,16 @@ class Main {
 //    	bookFound.sellPrice -= 2000;
 
     	prettyPrintShopDetails(shop, "Before selling book... ");
-    	boolean  successs = shop.sellBook(bookFound.getId());
-    	shop.sellBook(bookFound.getId());
-    	shop.sellBook(bookFound.getId());
-    	successs = shop.sellBook(bookFound.getId());
-    	if (successs) {
-    		System.out.println("SOLD!");
-    	} else {
-    		System.out.println("ALready SOLD!");
-    	}
+    	
+    	int numSold = shop.sellAllCopiesOfBook(bookFound);
+    	System.out.println("Sold: " + numSold);
+    	
+//    	boolean  successs = shop.sellBook(bookFound.getId()););
+//    	if (successs) {
+//    		System.out.println("SOLD!");
+//    	} else {
+//    		System.out.println("ALready SOLD!");
+//    	}
     	prettyPrintShopDetails(shop, "After selling book...");
     }
     
