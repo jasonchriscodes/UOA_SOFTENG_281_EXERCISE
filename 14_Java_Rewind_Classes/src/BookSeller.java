@@ -57,7 +57,7 @@ public class BookSeller {
 		for(Book book: collection) {
 			String title = book.getTitle().toLowerCase().trim();
 			
-			if (title.indexOf(keyword) >= 0) {
+			if (title.contains(keyword)) {
 				return book;
 			}
 		}
