@@ -12,6 +12,11 @@ public class BookSeller {
 	}
 	
 	public Book scanByID(int id) {
+		for (Book book: collection) {
+			if (book.getId() == id) {
+				return book;
+			}
+		}
 		return null;
 	}
 	

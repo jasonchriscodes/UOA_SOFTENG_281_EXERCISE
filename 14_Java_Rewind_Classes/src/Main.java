@@ -36,7 +36,7 @@ class Main {
     System.out.println();
     
     
-    Book bookFound = shop.scanByID(1);
+    Book bookFound = shop.scanByID(2);
     
     if (bookFound == null) {
     	System.out.println("Couldn't find this book!");
