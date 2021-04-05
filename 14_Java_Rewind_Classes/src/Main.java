@@ -44,7 +44,10 @@ class Main {
     	System.out.println("Found " + bookFound);
 
     	prettyPrintShopDetails(shop, "Before selling book... ");
-    	shop.sellBook(bookFound.getId());
+    	boolean  successs = shop.sellBook(bookFound.getId());
+    	if (successs) {
+    		System.out.println("SOLD!");
+    	}
     	prettyPrintShopDetails(shop, "After selling book...");
     }
     
