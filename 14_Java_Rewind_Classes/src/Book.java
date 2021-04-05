@@ -8,6 +8,12 @@ public class Book {
 	private double costPrice;
 	private double sellPrice;
 	
+	private static int oldestYear = Integer.MAX_VALUE;
+	
+	public static int getOldestBookYear() {
+		return oldestYear;
+	}
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(author, title, year);
@@ -43,6 +49,11 @@ public class Book {
 		this.sold = false;
 		this.id = nextID;
 		nextID++;
+		
+		if (year < oldestYear) {
+			oldestYear = year;
+		}
+		
 	}
 	
 	public void reduceSellPrice(double deltaAmount) {

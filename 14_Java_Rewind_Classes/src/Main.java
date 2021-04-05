@@ -17,7 +17,7 @@ class Main {
     Book hp1 = new Book("Harry Potter Philosopher Stone", "J. K. Rowling", 1997, 10.50, 29.95); // ID: 0
     Book hp2a = new Book("Harry Potter Chamber Secrets", "J. K. Rowling", 1998, 11.50, 31.95);  // ID: 1
     Book hp2b = new Book("Harry Potter Chamber Secrets", "J. K. Rowling", 1998, 9.50, 31.95);   // ID: 2
-    Book phil = new Book("Philosophy 101", "Paul Kleinman", 2013, 8.75, 15.99);                 // ID: 3
+    Book phil = new Book("Philosophy 101", "Paul Kleinman", 1013, 8.75, 15.99);                 // ID: 3
 
     shop.purchaseStock(hp1);
 
@@ -61,6 +61,10 @@ class Main {
 //    		System.out.println("ALready SOLD!");
 //    	}
     	prettyPrintShopDetails(shop, "After selling book...");
+
+        
+        System.out.println("Oldest Book Year is " + Book.getOldestBookYear());
+        
     }
     
   }
