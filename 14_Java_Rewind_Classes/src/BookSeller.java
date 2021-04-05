@@ -19,6 +19,10 @@ public class BookSeller {
 		return this.balance;
 	}
 	
+	public int totalNumberOfBooks() {
+		return collection.size();
+	}
+	
 	public void purchaseStock(Book book) {
 		balance -= book.getCostPrice();
 		

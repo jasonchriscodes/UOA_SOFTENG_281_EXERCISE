@@ -5,6 +5,7 @@ class Main {
     BookSeller shop = new BookSeller("Books r Us", 100); 
     
     System.out.println("Starting balance for " + shop.getShopName() + " is: " + shop.getCashBalance()); 
+    System.out.println(" has " + shop.totalNumberOfBooks() + " totl books in stock");
     System.out.println();
     
  // Create a few Book instances
@@ -15,12 +16,16 @@ class Main {
 
     shop.purchaseStock(hp1);
     System.out.println("Balance for " + shop.getShopName() + " after purchasing 1 book is: " + shop.getCashBalance());
+    System.out.println(" has " + shop.totalNumberOfBooks() + " totl books in stock");
     shop.purchaseStock(hp2a);
     System.out.println("Balance for " + shop.getShopName() + " after purchasing 2 books is: " + shop.getCashBalance());
+    System.out.println(" has " + shop.totalNumberOfBooks() + " totl books in stock");
     shop.purchaseStock(hp2b);
     System.out.println("Balance for " + shop.getShopName() + " after purchasing 3 books is: " + shop.getCashBalance());
+    System.out.println(" has " + shop.totalNumberOfBooks() + " totl books in stock");
     shop.purchaseStock(phil);
-    System.out.println("Balance for " + shop.getShopName() + " after purchasing 4 books is: " + shop.getCashBalance()); 
+    System.out.println("Balance for " + shop.getShopName() + " after purchasing 4 books is: " + shop.getCashBalance());
+    System.out.println(" has " + shop.totalNumberOfBooks() + " totl books in stock"); 
     
 //    System.out.println(hp1.toString());
 //    System.out.println(hp2a.toString());
