@@ -20,6 +20,23 @@ public class BookSeller {
 		return null;
 	}
 	
+	public boolean sellBook(int id) {
+		Book bookResult = scanByID(id);
+		
+		if (bookResult == null) {
+			return false;
+		}
+		
+		if (bookResult.isSold()) {
+			return false;
+		}
+		
+		balance += bookResult.getSellPrice();
+		bookResult.setSold();
+		
+		return true;
+	}
+	
 	public String getShopName() {
 		return this.name;
 	}

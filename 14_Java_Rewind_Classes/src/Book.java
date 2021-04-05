@@ -7,6 +7,8 @@ public class Book {
 	private double costPrice;
 	private double sellPrice;
 	private int id;
+	
+	private boolean sold;
 
 	private static int nextID = 0;
 
@@ -16,10 +18,25 @@ public class Book {
 		this.year = year;
 		this.costPrice = costPrice;
 		this.sellPrice = sellPrice;
+		this.sold = false;
 		this.id = nextID;
 		nextID++;
 	}
 	
+	/**
+	 * @return the sold
+	 */
+	public boolean isSold() {
+		return this.sold;
+	}
+
+	/**
+	 * @param sold the sold to set
+	 */
+	public void setSold() {
+		this.sold = true;
+	}
+
 	@Override
     public String toString() {
 		return this.title + " by " + this.author + " (" + this.year + ") has ID " + this.id;

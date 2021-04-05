@@ -42,6 +42,10 @@ class Main {
     	System.out.println("Couldn't find this book!");
     } else {
     	System.out.println("Found " + bookFound);
+
+    	prettyPrintShopDetails(shop, "Before selling book... ");
+    	shop.sellBook(bookFound.getId());
+    	prettyPrintShopDetails(shop, "After selling book...");
     }
     
   }
