@@ -1,12 +1,17 @@
 
 class Main {
+	
+
+  private static void prettyPrintShopDetails(BookSeller shop, String message) {
+	    System.out.print(message + shop.getShopName() + " has balance of : " + shop.getCashBalance()); 
+	    System.out.println(" and has " + shop.totalNumberOfBooks() + " total books in stock");
+	    System.out.println();
+  }
 
   public static void main(String[] args) {
     BookSeller shop = new BookSeller("Books r Us", 100); 
     
-    System.out.println("Starting balance for " + shop.getShopName() + " is: " + shop.getCashBalance()); 
-    System.out.println(" has " + shop.totalNumberOfBooks() + " totl books in stock");
-    System.out.println();
+    prettyPrintShopDetails(shop, "Starting balance ");
     
  // Create a few Book instances
     Book hp1 = new Book("Harry Potter Philosopher Stone", "J. K. Rowling", 1997, 10.50, 29.95); // ID: 0
@@ -15,17 +20,14 @@ class Main {
     Book phil = new Book("Philosophy 101", "Paul Kleinman", 2013, 8.75, 15.99);                 // ID: 3
 
     shop.purchaseStock(hp1);
-    System.out.println("Balance for " + shop.getShopName() + " after purchasing 1 book is: " + shop.getCashBalance());
-    System.out.println(" has " + shop.totalNumberOfBooks() + " totl books in stock");
+
+    prettyPrintShopDetails(shop, "After pruchase 1 book ");
     shop.purchaseStock(hp2a);
-    System.out.println("Balance for " + shop.getShopName() + " after purchasing 2 books is: " + shop.getCashBalance());
-    System.out.println(" has " + shop.totalNumberOfBooks() + " totl books in stock");
+    prettyPrintShopDetails(shop, "After pruchase 2 books ");
     shop.purchaseStock(hp2b);
-    System.out.println("Balance for " + shop.getShopName() + " after purchasing 3 books is: " + shop.getCashBalance());
-    System.out.println(" has " + shop.totalNumberOfBooks() + " totl books in stock");
+    prettyPrintShopDetails(shop, "After pruchase 3 books ");
     shop.purchaseStock(phil);
-    System.out.println("Balance for " + shop.getShopName() + " after purchasing 4 books is: " + shop.getCashBalance());
-    System.out.println(" has " + shop.totalNumberOfBooks() + " totl books in stock"); 
+    prettyPrintShopDetails(shop, "After pruchase 4 books "); 
     
 //    System.out.println(hp1.toString());
 //    System.out.println(hp2a.toString());
