@@ -11,6 +11,10 @@ public class BookSeller {
 		this.balance = balance;
 	}
 	
+	public Book scanByID(int id) {
+		return null;
+	}
+	
 	public String getShopName() {
 		return this.name;
 	}

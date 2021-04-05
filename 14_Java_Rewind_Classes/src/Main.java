@@ -11,7 +11,7 @@ class Main {
   public static void main(String[] args) {
     BookSeller shop = new BookSeller("Books r Us", 100); 
     
-    prettyPrintShopDetails(shop, "Starting balance ");
+//    prettyPrintShopDetails(shop, "Starting balance ");
     
  // Create a few Book instances
     Book hp1 = new Book("Harry Potter Philosopher Stone", "J. K. Rowling", 1997, 10.50, 29.95); // ID: 0
@@ -21,18 +21,29 @@ class Main {
 
     shop.purchaseStock(hp1);
 
-    prettyPrintShopDetails(shop, "After pruchase 1 book ");
+//    prettyPrintShopDetails(shop, "After purchase 1 book ");
     shop.purchaseStock(hp2a);
-    prettyPrintShopDetails(shop, "After pruchase 2 books ");
+//    prettyPrintShopDetails(shop, "After purchase 2 books ");
     shop.purchaseStock(hp2b);
-    prettyPrintShopDetails(shop, "After pruchase 3 books ");
+//    prettyPrintShopDetails(shop, "After purchase 3 books ");
     shop.purchaseStock(phil);
-    prettyPrintShopDetails(shop, "After pruchase 4 books "); 
+//    prettyPrintShopDetails(shop, "After purchase 4 books "); 
     
-//    System.out.println(hp1.toString());
-//    System.out.println(hp2a.toString());
-//    System.out.println(hp2b.toString());
-//    System.out.println(phil.toString());
+    System.out.println(hp1.toString());
+    System.out.println(hp2a.toString());
+    System.out.println(hp2b.toString());
+    System.out.println(phil.toString());
+    System.out.println();
+    
+    
+    Book bookFound = shop.scanByID(1);
+    
+    if (bookFound == null) {
+    	System.out.println("Couldn't find this book!");
+    } else {
+    	System.out.println("Found " + bookFound);
+    }
+    
   }
 
 }
