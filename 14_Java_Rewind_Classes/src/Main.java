@@ -38,10 +38,15 @@ class Main {
     
     Book bookFound = shop.scanByID(2);
     
+    
+    
     if (bookFound == null) {
     	System.out.println("Couldn't find this book!");
     } else {
     	System.out.println("Found " + bookFound);
+    	
+//    	bookFound.reduceSellPrice(2000);
+    	bookFound.sellPrice -= 2000;
 
     	prettyPrintShopDetails(shop, "Before selling book... ");
     	boolean  successs = shop.sellBook(bookFound.getId());
