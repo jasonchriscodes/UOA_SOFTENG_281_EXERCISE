@@ -49,6 +49,34 @@ public class BookSeller {
 		return collection.size();
 	}
 	
+	public Book searchKeyword(String keyword) {
+//		Book searchResult = null;
+		
+		keyword = keyword.toLowerCase().trim();
+		
+		for(Book book: collection) {
+			String title = book.getTitle().toLowerCase().trim();
+			
+			if (title.indexOf(keyword) >= 0) {
+				return book;
+			}
+		}
+		
+		return null;
+	}
+	
+	public int totalNumberOfUnsoldBooks() {
+		int countUnsold = 0;
+		
+		for(Book book: collection) {
+			if (!book.isSold()) {
+				countUnsold++;
+			}
+		}
+		
+		return countUnsold;
+	}
+	
 	public void purchaseStock(Book book) {
 		balance -= book.getCostPrice();
 		
