@@ -45,8 +45,8 @@ class Main {
     } else {
     	System.out.println("Found " + bookFound);
     	
-//    	bookFound.reduceSellPrice(2000);
-    	bookFound.sellPrice -= 2000;
+    	bookFound.reduceSellPrice(2000);
+//    	bookFound.sellPrice -= 2000;
 
     	prettyPrintShopDetails(shop, "Before selling book... ");
     	boolean  successs = shop.sellBook(bookFound.getId());

@@ -5,7 +5,7 @@ public class Book {
 	private String author;
 	private int year;
 	private double costPrice;
-	public double sellPrice;
+	private double sellPrice;
 	private int id;
 	
 	private boolean sold;
@@ -23,13 +23,13 @@ public class Book {
 		nextID++;
 	}
 	
-//	public void reduceSellPrice(double deltaAmount) {
-//		this.sellPrice -= deltaAmount;
-//		
-//		if (this.sellPrice < this.costPrice) {
-//			this.sellPrice = this.costPrice;
-//		}
-//	}
+	public void reduceSellPrice(double deltaAmount) {
+		this.sellPrice -= deltaAmount;
+		
+		if (this.sellPrice < this.costPrice) {
+			this.sellPrice = this.costPrice;
+		}
+	}
 	
 	/**
 	 * @return the sold
