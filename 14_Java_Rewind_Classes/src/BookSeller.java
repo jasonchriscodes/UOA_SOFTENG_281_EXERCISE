@@ -8,5 +8,13 @@ public class BookSeller {
 		this.name = name;
 		this.balance = balance;
 	}
+	
+	public String getShopName() {
+		return this.name;
+	}
+
+	public double getCashBalance() {
+		return this.balance;
+	}
   
 }
