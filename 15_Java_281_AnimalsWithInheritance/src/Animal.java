@@ -11,9 +11,12 @@ public class Animal {
 	private int numLegs; 
 	private Gender gender; 
 	
-	public Animal() {
-		System.out.println("Constructor for Animal using empty param constructor ");
-	}
+//	public Animal() {
+//		name = "Bob";
+//		yearBorn = yearNow;
+//		numLegs = 123;
+//		System.out.println("Constructor for Animal using empty param constructor ");
+//	}
 	
 	public Animal(String name, int yearBorn, int numLegs, Gender gender) {
 		this.name = name;
@@ -30,13 +33,13 @@ public class Animal {
 
 	// all animals walk() slightly differently
 	public void walk() {
-		if (getClass() == Rabbit.class ) { 
-			System.out.println("I'm a Rabbit, so I hop on my 2 legs!"); 
-		} else if (getClass() == Cat.class) { 
-			System.out.println("I'm a Cat, so I stroll along!"); 
-		} else { 
-			System.out.println("Don't know how a " + getClass().getName() + " walks! " + name); 
-		}
+//		if (getClass() == Rabbit.class ) { 
+//			System.out.println("I'm a Rabbit, so I hop on my 2 legs!"); 
+//		} else if (getClass() == Cat.class) { 
+//			System.out.println("I'm a Cat, so I stroll along!"); 
+//		} else { 
+		System.out.println("Don't know how a " + getClass().getName() + " walks! " + name); 
+//		}
 	}
 
 }

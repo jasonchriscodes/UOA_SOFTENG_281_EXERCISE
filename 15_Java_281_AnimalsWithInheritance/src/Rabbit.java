@@ -5,5 +5,10 @@ public class Rabbit extends Animal {
 		super(name, yearBorn, 2, gender);
 		System.out.println("Constructor for Rabbit: " + name);
 	}
+	
+	@Override
+	public void walk() {
+		System.out.println("I'm a Rabbit, so I hop on my 2 legs!"); 
+	}
 
 }
