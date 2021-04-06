@@ -4,23 +4,28 @@ public class Animal {
 
 	public enum Gender {FEMALE, MALE, NON_BINARY}
 
-	private int yearNow = Calendar.getInstance().get(Calendar.YEAR);
+	private static int yearNow = Calendar.getInstance().get(Calendar.YEAR);
 
 	private String name; 
 	private int yearBorn; 
 	private int numLegs; 
 	private Gender gender; 
-
+	
+	public Animal() {
+		System.out.println("Constructor for Animal using empty param constructor ");
+	}
+	
 	public Animal(String name, int yearBorn, int numLegs, Gender gender) {
 		this.name = name;
 		this.yearBorn = yearBorn;
 		this.numLegs = numLegs;
 		this.gender = gender;
+		System.out.println("Constructor for Animal: " + name);
 	}
 
 	// all animals introduce() themselves the same way
 	public void introduce() {
-		System.out.println("Hello, my name is " + name + ". I'm " + (yearNow-yearBorn) + " years old, and I walk on "+ numLegs + " legs.");
+		System.out.println("Hello, my name is " + this.name + ". I'm " + (yearNow-yearBorn) + " years old, and I walk on "+ numLegs + " legs.");
 	}
 
 	// all animals walk() slightly differently
@@ -30,7 +35,7 @@ public class Animal {
 		} else if (getClass() == Cat.class) { 
 			System.out.println("I'm a Cat, so I stroll along!"); 
 		} else { 
-			System.out.println("Don't know how a " + getClass().getName() + " walks!"); 
+			System.out.println("Don't know how a " + getClass().getName() + " walks! " + name); 
 		}
 	}
 
