@@ -17,5 +17,9 @@ public class Cat extends Animal {
 		super.introduce();
 	}
 
+	public void chaseMouse() {
+		System.out.println(name + " is chasing a mouse!! ");
+	}
+	
 
 }
