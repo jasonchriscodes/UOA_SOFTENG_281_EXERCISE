@@ -6,10 +6,10 @@ public class Animal {
 
 	private static int yearNow = Calendar.getInstance().get(Calendar.YEAR);
 
-	private String name; 
-	private int yearBorn; 
-	private int numLegs; 
-	private Gender gender; 
+	protected String name; 
+	protected int yearBorn; 
+	protected int numLegs; 
+	protected Gender gender; 
 	
 //	public Animal() {
 //		name = "Bob";
@@ -23,12 +23,13 @@ public class Animal {
 		this.yearBorn = yearBorn;
 		this.numLegs = numLegs;
 		this.gender = gender;
-		System.out.println("Constructor for Animal: " + name);
+//		System.out.println("Constructor for Animal: " + name);
 	}
 
 	// all animals introduce() themselves the same way
 	public void introduce() {
-		System.out.println("Hello, my name is " + this.name + ". I'm " + (yearNow-yearBorn) + " years old, and I walk on "+ numLegs + " legs.");
+		System.out.print("Hello my name is " + this.name + ". I'm " + (yearNow-yearBorn) + " years old, and I walk on "+ numLegs + " legs.");
+		System.out.println(" Nice to meet you.");
 	}
 
 	// all animals walk() slightly differently
