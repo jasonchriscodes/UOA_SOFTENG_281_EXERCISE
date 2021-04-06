@@ -1,6 +1,6 @@
 import java.util.Calendar;
 
-public class Animal { 
+public abstract class Animal { 
 
 	public enum Gender {FEMALE, MALE, NON_BINARY}
 
@@ -33,14 +33,16 @@ public class Animal {
 	}
 
 	// all animals walk() slightly differently
-	public void walk() {
+	public abstract void walk();
+	
+//	{
 //		if (getClass() == Rabbit.class ) { 
 //			System.out.println("I'm a Rabbit, so I hop on my 2 legs!"); 
 //		} else if (getClass() == Cat.class) { 
 //			System.out.println("I'm a Cat, so I stroll along!"); 
 //		} else { 
-		System.out.println("Don't know how a " + getClass().getName() + " walks! " + name); 
+//		System.out.println("Don't know how a " + getClass().getName() + " walks! " + name); 
 //		}
-	}
+//	}
 
 }

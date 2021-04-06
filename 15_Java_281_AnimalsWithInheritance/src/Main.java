@@ -9,16 +9,16 @@ class Main {
 //		Animal weirdAnimal = new Animal("Nasser", 1983, 2, Animal.Gender.MALE);
 
 
-		lola.introduce();
-		garfield.introduce();
-		alex.introduce();
+//		lola.introduce();
+//		garfield.introduce();
+//		alex.introduce();
+//		weirdAnimal.introduce();
 		
-//		lola.walk();
-//		garfield.walk();
-//		alex.walk();
+		lola.walk();
+		garfield.walk();
+		alex.walk();
 //		
 //		garfield.introduce();
-//		weirdAnimal.walk();
 
 	}
 }
