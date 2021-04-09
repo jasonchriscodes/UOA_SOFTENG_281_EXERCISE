@@ -23,9 +23,21 @@ public class ItemSeller {
 		cashBalance -= item.getCostPrice();
 		collection.add(item);
 	}
-	
-	public int totalNumberOfBooks() {
+
+	public int totalNumberOfItems() {
 		return collection.size();
+	}
+
+	public int totalNumberOfItems(Item.Type typeLookingFor) {
+		int count = 0;
+		
+		for (Item item: collection) {
+			if (item.getType() == typeLookingFor) {
+				count++;
+			}
+		}
+		
+		return count;
 	}
 	
 }

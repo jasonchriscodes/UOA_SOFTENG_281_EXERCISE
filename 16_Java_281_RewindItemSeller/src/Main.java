@@ -11,6 +11,9 @@ public class Main {
 		Dvd shawshank = new Dvd("The Shawshank Redemption", "Frank Darabont", 1994, 8, 22.95);              // ID: 1
 		Item godFather = new Dvd("The Godfather", "Francis Ford Coppola", 1972, 11, 29.95);                 // ID: 2
 		
+		
+		godFather = harryPotter;
+		
 		shop.purchaseStock(harryPotter);
 		shop.purchaseStock(shawshank);
 		shop.purchaseStock(godFather); 
@@ -20,6 +23,10 @@ public class Main {
 //		System.out.println(" type = " + harryPotter.getType());
 
 		System.out.println("Balance after purchasing stock: $" + shop.getCashBalance());
+
+		System.out.println("Total number of items = " + shop.totalNumberOfItems());
+		System.out.println("Total number of books = " + shop.totalNumberOfItems(Item.Type.BOOK));
+		System.out.println("Total number of DVDs = " + shop.totalNumberOfItems(Item.Type.DVD));
 
 	}
 
