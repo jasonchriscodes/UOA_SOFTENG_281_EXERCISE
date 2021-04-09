@@ -12,6 +12,7 @@ public class Main {
 		
 		System.out.println("Purchased: " + harryPotter);
 		
+		System.out.println(" type = " + harryPotter.getType());
 
 		System.out.println("Balance after purchasing stock: $" + shop.getCashBalance());
 

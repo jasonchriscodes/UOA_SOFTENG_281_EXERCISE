@@ -1,11 +1,13 @@
 
-public class Item {
+public abstract class Item {
+	
+	public enum Type {BOOK, DVD}
 	
 	protected final String title;
-	private final int year;
-	private double costPrice;
-	private double sellPrice;
-	private int itemID;
+	protected final int year;
+	protected double costPrice;
+	protected double sellPrice;
+	protected int itemID;
 	private static int nextID = 0;
 
 	public Item(String title, int year, double costPrice, double sellPrice) {
@@ -40,5 +42,7 @@ public class Item {
 	public String toString() {
 		return "Item: " + this.title + " (" + this.year + ")";
 	}
+	
+	public abstract Type getType();
 
 }

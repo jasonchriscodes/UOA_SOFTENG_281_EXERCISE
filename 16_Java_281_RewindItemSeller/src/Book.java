@@ -16,5 +16,10 @@ public class Book extends Item {
 	public String toString() {
 		return "Book " + super.toString() + " " + this.author;
 	}
+	
+	@Override
+	public Item.Type getType() {
+		return Type.BOOK;
+	}
 
 }
