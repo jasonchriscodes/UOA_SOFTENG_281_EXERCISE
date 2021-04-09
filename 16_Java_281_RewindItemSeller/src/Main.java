@@ -3,7 +3,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		BookSeller shop = new BookSeller("Books 'r' Us", 100.0); 
+		ItemSeller shop = new ItemSeller("Items 'r' Us", 100.0); 
 		System.out.println("Starting balance: $" + shop.getCashBalance()); 
 		System.out.println();
 
