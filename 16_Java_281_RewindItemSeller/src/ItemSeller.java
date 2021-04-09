@@ -4,7 +4,7 @@ public class ItemSeller {
 
 	private String shopName;
 	private double cashBalance;
-	private ArrayList<Book> collection = new ArrayList<>();
+	private ArrayList<Item> collection = new ArrayList<>();
 	
 	public ItemSeller(String shopName, double initialBalance) {
 		this.shopName = shopName;
@@ -19,9 +19,9 @@ public class ItemSeller {
 		return this.cashBalance;
 	}
 	
-	public void purchaseStock(Book book) {
-		cashBalance -= book.getCostPrice();
-		collection.add(book);
+	public void purchaseStock(Item item) {
+		cashBalance -= item.getCostPrice();
+		collection.add(item);
 	}
 	
 	public int totalNumberOfBooks() {
