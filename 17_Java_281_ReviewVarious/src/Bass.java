@@ -7,7 +7,7 @@ public class Bass extends StringInstrument {
 	
 	@Override
 	public void makeSound() {
-		System.out.println("Bass sound... bmmm bmmm bnmmm");
+		System.err.println("Bass sound... bmmm bmmm bnmmm");
 	}
 
 }
