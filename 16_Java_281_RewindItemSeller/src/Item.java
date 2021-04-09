@@ -1,7 +1,7 @@
 
 public class Item {
 	
-	private final String title;
+	protected final String title;
 	private final int year;
 	private double costPrice;
 	private double sellPrice;
@@ -34,6 +34,11 @@ public class Item {
 
 	public int getID() {
 		return this.itemID;
+	}
+	
+	@Override
+	public String toString() {
+		return "Item: " + this.title + " (" + this.year + ")";
 	}
 
 }
