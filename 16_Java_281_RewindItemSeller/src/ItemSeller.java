@@ -27,7 +27,8 @@ public class ItemSeller {
 	public int totalNumberOfItems() {
 		return collection.size();
 	}
-
+	
+//	This is overloading, multiple methods of the same name with different parameters
 	public int totalNumberOfItems(Item.Type typeLookingFor) {
 		int count = 0;
 		

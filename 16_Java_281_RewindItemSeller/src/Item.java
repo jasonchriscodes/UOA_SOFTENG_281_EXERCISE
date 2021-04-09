@@ -1,7 +1,7 @@
 
 public abstract class Item {
 	
-	public enum Type {BOOK, DVD}
+	public enum Type {BOOK, DVD} // use capitalized for convention of enum 
 	
 	protected final String title;
 	protected final int year;
@@ -43,6 +43,7 @@ public abstract class Item {
 		return "Item: " + this.title + " (" + this.year + ")";
 	}
 	
+	// become abstract because not ready to return a result type item
 	public abstract Type getType();
 
 }
