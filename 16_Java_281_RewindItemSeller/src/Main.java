@@ -8,11 +8,16 @@ public class Main {
 		System.out.println();
 
 		Book harryPotter = new Book("Harry Potter Philosopher Stone", "J. K. Rowling", 1997, 10.50, 29.95); // ID: 0
-		shop.purchaseStock(harryPotter); 
+		Dvd shawshank = new Dvd("The Shawshank Redemption", "Frank Darabont", 1994, 8, 22.95);              // ID: 1
+		Item godFather = new Dvd("The Godfather", "Francis Ford Coppola", 1972, 11, 29.95);                 // ID: 2
 		
-		System.out.println("Purchased: " + harryPotter);
+		shop.purchaseStock(harryPotter);
+		shop.purchaseStock(shawshank);
+		shop.purchaseStock(godFather); 
 		
-		System.out.println(" type = " + harryPotter.getType());
+//		System.out.println("Purchased: " + harryPotter);
+		
+//		System.out.println(" type = " + harryPotter.getType());
 
 		System.out.println("Balance after purchasing stock: $" + shop.getCashBalance());
 
