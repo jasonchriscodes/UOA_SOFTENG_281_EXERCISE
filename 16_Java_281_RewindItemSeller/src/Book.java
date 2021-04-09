@@ -11,5 +11,10 @@ public class Book extends Item {
 	public String getAuthor() {
 		return this.author;
 	}
+	
+	@Override
+	public String toString() {
+		return "Book " + super.toString() + " " + this.author;
+	}
 
 }
