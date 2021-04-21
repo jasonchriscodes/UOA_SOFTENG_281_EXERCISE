@@ -6,7 +6,7 @@ class Main {
 
   public static void main(String[] args) {
     
-    int dayToCheck = MONDAY;
+    int dayToCheck = SUNDAY;
 
     if (dayToCheck == MONDAY) {
         System.out.println("MONDAY is a weekday!");
@@ -18,10 +18,10 @@ class Main {
         System.out.println("THURSDAY is a weekday!");
     } else if (dayToCheck == FRIDAY) {
         System.out.println("FRIDAY is a weekday!");
-    } else if (dayToCheck == MONDAY) {
-        System.out.println("SATURDAY is a weekday!");
-    } else if (dayToCheck == MONDAY) {
-        System.out.println("SUNDAY is a weekday!");
+    } else if (dayToCheck == SATURDAY) {
+        System.out.println("SATURDAY is a weekend!");
+    } else if (dayToCheck == SUNDAY) {
+        System.out.println("SUNDAY is a weekend!");
     } else {
         System.out.println("Uh oh! We have more than 7 possible days of the week!");
     } 
