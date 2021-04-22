@@ -22,9 +22,18 @@ public class Person {
 		String name = firstName + " " + lastName; // the parameter(takes no parameter), the return type (String), is this static or not (not a static method))
 		return name;
 	}
+	
+	public String getInitial() {
+		String initial = firstName.substring(0, 1) + "." + " " +lastName.substring(0, 1) + ".";
+		return initial;
+	}
 
 	public int getAge() { // getter age
 		return age;
+	}
+	
+	public boolean isAdult() {
+		return age >= 18;
 	}
 
 	public void birthday() {

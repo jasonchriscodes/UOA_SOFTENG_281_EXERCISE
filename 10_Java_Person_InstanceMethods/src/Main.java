@@ -1,7 +1,7 @@
 class Main {
 	public static void main(String[] args) {
 
-		Person bob = new Person("Bob", "Jones", 18);
+		Person bob = new Person("Bob", "Jones", 17);
 		Person jenny = new Person("Jenny", "Jones", 20);
 
 		/*
@@ -46,6 +46,18 @@ class Main {
 		 */
 		bob.introduceSelf();
 		jenny.introduceSelf();
+		
+		/*
+		 Check getInital method
+		 */
+		System.out.println(jenny.getInitial());
+		System.out.println(bob.getInitial());
+		
+		/*
+		 Check isAdult method
+		 */
+		System.out.println(jenny.isAdult());
+		System.out.println(bob.isAdult());
 
 	}
 }
