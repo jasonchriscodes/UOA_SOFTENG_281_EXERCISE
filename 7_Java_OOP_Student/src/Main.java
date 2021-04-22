@@ -9,8 +9,8 @@ class Main { // class must match the .java file
     
     myStudent2.details();
     
-    myStudent.firstName = "Jim"; // we get error message because we set firstName attribute on Student Class as private
-    System.out.println(myStudent.firstName);// not a public
+//    myStudent.firstName = "Jim"; // we get error message because we set firstName attribute on Student Class as private
+//    System.out.println(myStudent.firstName);// not a public
 
   }
 }

@@ -9,6 +9,7 @@ public class Student {
 
   public Student(String firstName, String lastName, double gpa, 
       String major, int age, boolean onProbation) {
+	  System.out.println("Student's constructor is called");
     this.firstName = firstName; // 'this' is a reference variable that refers to the current object.
     this.lastName = lastName;
     this.gpa = gpa;
