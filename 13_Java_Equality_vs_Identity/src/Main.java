@@ -3,7 +3,8 @@ class Main {
 
 		Colour r1 = new Colour("Red", 255, 0, 0);
 		Colour r2 = new Colour("Red", 255, 0, 0);
-		Colour r3 = new Colour("Rouge", 255, 0, 0);
+//		Colour r3 = new Colour("Rouge", 255, 0, 0);
+		Colour r3 = r1;
 
 		System.out.println("Checking identity:");
 
