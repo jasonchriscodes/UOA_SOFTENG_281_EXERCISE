@@ -12,7 +12,7 @@ public class Colour {
 		this.blue = blue;
 	}
 
-	@Override // show that this method overriding the one that is default for object (optional but good habbit)
+	@Override // show that this method overriding the one that is default for object (optional but good habit)
 	// instance method, Object in (Object obj) is an object class
 	public boolean equals(Object obj) { 
 		// exact same instance?
@@ -49,8 +49,22 @@ public class Colour {
 		boolean sameBlue = this.blue == other.blue;
 		boolean same = sameRed && sameGreen && sameBlue;
 
+		if(!same) {
+			return false;
+		} 
+
+		// Checking the spelling of the obj equal this
+		String thisColour = this.name.substring(0, this.name.length());
+		String objColour = other.name.substring(0, other.name.length());
+		if(thisColour == objColour) {
+			return true;
+		} else if (thisColour != objColour){
+			return false;
+		}
+		
 		return same;
 	}
+
 
 	@Override
 	// check if one colour is equal to a collection of colour, organize a collection of colour
