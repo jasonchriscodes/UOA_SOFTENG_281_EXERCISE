@@ -1,11 +1,10 @@
 class Main {
 
-  public static void printStatus(String message) {
-    System.out.println(message + ":"); 
+  public static void printStatus(String message) { // use static void because there are 2 static method
+    System.out.println(message + ":"); 			// ,only can fill with static field or method
     System.out.println("Population = " + Person.getPopulation()); 
     System.out.println("Oldest age = " + Person.getOldestAge() 
       + " (" + Person.getOldestPerson() + ")");   
-    System.out.println(); 
   }
 
   public static void main(String[] args) {
