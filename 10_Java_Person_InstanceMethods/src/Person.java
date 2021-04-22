@@ -45,6 +45,12 @@ public class Person {
 		System.out.println("Hello, my name is " + firstName + 
 				" and I am " + age + " years old.");
 	}
+	
+	public void meet(Person other) {
+		System.out.println(this.firstName + ", meet " + other.firstName);
+		this.introduceSelf();
+		other.introduceSelf();
+	}
 
 }
 

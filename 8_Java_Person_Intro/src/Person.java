@@ -32,6 +32,10 @@ public class Person { // define custom type (person class)
 		System.out.println("Hello, my name is " + firstName + 
 				" and I am " + age + " years old.");
 	}
+	
+	public void meet(Person other) {
+		sysout
+	}
 
 }
 

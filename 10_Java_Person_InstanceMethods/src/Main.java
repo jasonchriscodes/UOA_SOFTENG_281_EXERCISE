@@ -58,6 +58,10 @@ class Main {
 		 */
 		System.out.println(jenny.isAdult());
 		System.out.println(bob.isAdult());
-
+		
+		/*
+		 Check meet method
+		 */
+		bob.meet(jenny);
 	}
 }
