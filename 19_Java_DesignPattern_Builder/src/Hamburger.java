@@ -7,11 +7,11 @@ public class Hamburger {
 	private boolean extraCheese; 	// optional
 	private boolean addChips; 		// optional
 
-	public Hamburger(String name, String size, boolean extraCheese, boolean addChips) {
-		this.name = name;
-		this.size = size;
-		this.extraCheese = extraCheese;
-		this.addChips = addChips;
+	private Hamburger(Builder builder) {
+		this.name = builder.name;
+		this.size = builder.size;
+		this.extraCheese = builder.extraCheese;
+		this.addChips = builder.addChips;
 	}
 
 	@Override
@@ -23,5 +23,34 @@ public class Hamburger {
 				.add("addChips=" + addChips)
 				.toString();
 	}
+	
+	
+	public static class Builder {
+		private String name; 			// mandatory
+		private String size; 			// mandatory
+		private boolean extraCheese = false; 	// optional
+		private boolean addChips = false; 		// optional
+		
+		public Builder(String name, String size) {
+			this.name = name;
+			this.size = size;
+		}
+		
+		public Builder addExtraCheese() {
+			this.extraCheese = true;
+			return this;
+		}
+
+		public Builder addSomeChips() {
+			this.addChips = true;
+			return this;
+		}
+		
+		public Hamburger build() {
+			return new Hamburger(this);
+		}
+		
+	}
+	
 
 }
