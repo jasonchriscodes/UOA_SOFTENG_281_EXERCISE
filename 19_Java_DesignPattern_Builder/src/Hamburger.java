@@ -31,16 +31,19 @@ public class Hamburger {
 		private boolean extraCheese = false; 	// optional
 		private boolean addChips = false; 		// optional
 		
+		// costructor
 		public Builder(String name, String size) {
 			this.name = name;
 			this.size = size;
 		}
 		
+		// setter
 		public Builder addExtraCheese() {
 			this.extraCheese = true;
 			return this;
 		}
-
+		
+		// setter
 		public Builder addSomeChips() {
 			this.addChips = true;
 			return this;
