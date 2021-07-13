@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings>
+    <projectID>109684332</projectID>
+    <instituteID>53</instituteID>
+    <locationToUpload>exercises/</locationToUpload>
+    <tag>Stack with empty methods and empty test cases</tag>
+    <projectName>ACPStack</projectName>
+    <ignore/>
+</settings>
