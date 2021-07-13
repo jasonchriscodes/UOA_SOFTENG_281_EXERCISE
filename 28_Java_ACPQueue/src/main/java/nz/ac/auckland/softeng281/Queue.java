@@ -42,7 +42,7 @@ public class Queue {
 
 
 	public int peek(int pos) throws InvalidPositionException {
-		return 0;
+		return data[pos];
 	}
 
 	public int getFront() {
