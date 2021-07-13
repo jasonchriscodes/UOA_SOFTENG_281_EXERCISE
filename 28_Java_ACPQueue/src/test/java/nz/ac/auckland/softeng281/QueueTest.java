@@ -48,4 +48,21 @@ public class QueueTest {
 			
 		} 
 	}
+	
+	@Test
+	public void testDequeue() {
+		try {
+			q.enqueue(10);
+			q.enqueue(20);
+			q.enqueue(30);
+			q.dequeue();
+			assertTrue("The size is correct", q.getCount() == 2);
+		} catch (QueueFullException e ) {
+			
+		} 
+		catch(QueueEmptyException e)
+		{
+			fail();
+		}
+	}
 }
