@@ -29,7 +29,9 @@ public class Queue {
 	}
 
 	public int dequeue() throws QueueEmptyException {
-		
+		if(rear==front) {
+			throw new QueueEmptyException("Queue is full");
+		}
 		int out = data[front];
 		++front;
 		--count;
