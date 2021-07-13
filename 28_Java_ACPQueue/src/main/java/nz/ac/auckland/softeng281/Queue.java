@@ -29,7 +29,11 @@ public class Queue {
 	}
 
 	public int dequeue() throws QueueEmptyException {
-		return 0;
+		
+		int out = data[front];
+		++front;
+		--count;
+		return out;
 		
 	}
 
