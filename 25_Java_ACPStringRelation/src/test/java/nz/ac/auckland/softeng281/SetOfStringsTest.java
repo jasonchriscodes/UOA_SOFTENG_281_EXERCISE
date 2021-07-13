@@ -149,8 +149,11 @@ public class SetOfStringsTest {
 			expected.insertElement("a,d");
 			expected.insertElement("b,d");
 			expected.insertElement("c,d");
+			System.out.println("Display the product set");
+			set1.product(set2).displaySet();
 			assertEquals(set1.product(set2).size(),6);
 			assertEquals(expected, set1.product(set2));
+			
 		}
 	
 }
