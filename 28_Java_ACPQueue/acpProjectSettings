@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings>
+    <projectID>109684331</projectID>
+    <instituteID>53</instituteID>
+    <locationToUpload>exercises/</locationToUpload>
+    <tag>First version with test case failing for enqueue</tag>
+    <projectName>ACPQueue</projectName>
+    <ignore/>
+</settings>
