@@ -1,0 +1,19 @@
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		MathOperation operation1 = new MathOperation(15, 15, "+");
+		System.out.println(operation1.process());
+
+		MathOperation operation2 = new MathOperation(15, 15, "-");
+		System.out.println(operation2.process());
+
+		MathOperation operation3 = new MathOperation(15, 15, "*");
+		System.out.println(operation3.process());
+
+		MathOperation operation4 = new MathOperation(15, 15, "/");
+		System.out.println(operation4.process());
+
+	}
+}
