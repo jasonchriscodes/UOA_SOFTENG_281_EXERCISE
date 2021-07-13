@@ -40,11 +40,23 @@ public class MaxNumbers {
 			throw new CannotComputeTheMaximumListEmpty();
 		}
 		int max = numbers.get(0);
-		for (int i = 0; i < numbers.size() - 1; i++) {
+		for (int i = 0; i < numbers.size(); i++) {
 			if (numbers.get(i) > max) {
 				max = numbers.get(i);
 			}
 		}
 		return max;
 	}
+	
+	public int shouldBeFast() {
+		System.out.println(".... Start...");
+		try {
+			Thread.sleep(800);
+		} catch (InterruptedException e) {
+		}
+
+		System.out.println(".... End!");
+		return 8;
+	}
+	
 }

@@ -26,10 +26,33 @@ public class MaxNumbersTest {
 	}
 	
 	@Test
+	public void test_getMax_addDescreasingOrderNumbers_ShouldReturnLargestOne() {
+		assertTrue(maxNumbers.addNumber(5));
+		assertTrue(maxNumbers.addNumber(4));
+		assertTrue(maxNumbers.addNumber(2));
+		assertEquals(5, maxNumbers.getMax());
+	}
+	
+
+	@Test
+	public void test_getMax_addIncreasingOrderNumbers_ShouldReturnLargestOne() {
+		assertTrue(maxNumbers.addNumber(2));
+		assertTrue(maxNumbers.addNumber(4));
+		assertTrue(maxNumbers.addNumber(5));
+		assertEquals(5, maxNumbers.getMax());
+	}
+	
+	@Test
 	public void test_addNumber_addTwoDifferentNumbers_BothShouldBeAdded() {
 		assertTrue(maxNumbers.addNumber(5));
 		assertTrue(maxNumbers.addNumber(3));
 		assertEquals(5, maxNumbers.getMax());
+	}
+	
+	@Test(timeout = 1000)
+	public void test_shouldBeFast_waitingForItToFinish_ShouldntTakeLong() {
+		int result = maxNumbers.shouldBeFast();
+		assertEquals(8, result);
 	}
 	
 	@Test
