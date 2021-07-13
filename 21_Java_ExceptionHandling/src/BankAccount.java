@@ -49,8 +49,9 @@ public class BankAccount {
 	public void deposit(double amount) {
 
 		if (transactions == transactionsLimit) {
-			System.out.println("transactions limit reached");
-			return;
+//			System.out.println("transactions limit reached");
+			throw new BankException("transactions limit reached");
+//			return;
 		}
 
 		if (transactions < transactionsLimit) {
@@ -66,14 +67,16 @@ public class BankAccount {
 	 */
 	public void withdraw(double amount) {
 		if (transactions == transactionsLimit) {
-			System.out.println("transactions limit reached");
-			return;
+			throw new BankException("transactions limit reached");
+//			System.out.println("transactions limit reached");
+//			return;
 		}
 		if (balance >= amount) {
 			balance -= amount;
 			transactions++;
 		} else {
-			System.out.println("amount exceeded");
+//			System.out.println("amount exceeded");
+			throw new BankException("amount exceeded");
 		}
 	}
 
@@ -86,14 +89,16 @@ public class BankAccount {
 	 */
 	public void transferTo(double amount, BankAccount recipient) {
 		if (this.transactions == this.transactionsLimit || recipient.transactions == recipient.transactionsLimit) {
-			System.out.println("transactions limit reached");
-			return;
+//			System.out.println("transactions limit reached");
+//			return;
+			throw new BankException("transactions limit reached");
 		}
 		if (this.balance >= amount) {
 			withdraw(amount);
 			recipient.deposit(amount);
 		} else {
-			System.out.println("amount exceeded");
+//			System.out.println("amount exceeded");
+			throw new BankException("amount exceeded");
 		}
 	}
 
