@@ -19,6 +19,10 @@ public class Queue {
 	}
 
 	public void enqueue(int val) throws QueueFullException {
+		
+		if(rear==size) {
+			throw new QueueFullException("Queue is full");
+		}
 		data[rear]=val;
 		++rear;
 		++count;
