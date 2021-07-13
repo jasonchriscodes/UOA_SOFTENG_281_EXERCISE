@@ -15,5 +15,8 @@ public class Main {
 		MathOperation operation4 = new MathOperation(15, 15, new DivideOperator());
 		System.out.println(operation4.process());
 
+		MathOperation operation5 = new MathOperation(2, 10, new PowerOperator());
+		System.out.println(operation5.process());
+
 	}
 }
