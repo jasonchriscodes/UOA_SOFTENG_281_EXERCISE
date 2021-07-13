@@ -46,7 +46,7 @@ public class BankAccount {
 	 *
 	 * @param amount
 	 */
-	public void deposit(double amount) {
+	public void deposit(double amount) throws BankException {
 
 		if (transactions == transactionsLimit) {
 //			System.out.println("transactions limit reached");
@@ -65,7 +65,7 @@ public class BankAccount {
 	 *
 	 * @param amount
 	 */
-	public void withdraw(double amount) {
+	public void withdraw(double amount) throws BankException {
 		if (transactions == transactionsLimit) {
 			throw new BankException("transactions limit reached");
 //			System.out.println("transactions limit reached");
@@ -87,7 +87,7 @@ public class BankAccount {
 	 * @param amount
 	 * @param recipient
 	 */
-	public void transferTo(double amount, BankAccount recipient) {
+	public void transferTo(double amount, BankAccount recipient) throws BankException{
 		if (this.transactions == this.transactionsLimit || recipient.transactions == recipient.transactionsLimit) {
 //			System.out.println("transactions limit reached");
 //			return;
