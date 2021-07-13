@@ -108,6 +108,8 @@ public class SetOfStrings {
 	 */
 	public SetOfStrings union(SetOfStrings set2) {
 		SetOfStrings out = new SetOfStrings();
+		out.addAllElements(this);
+		out.addAllElements(set2);
 		return out;
 	}
 
