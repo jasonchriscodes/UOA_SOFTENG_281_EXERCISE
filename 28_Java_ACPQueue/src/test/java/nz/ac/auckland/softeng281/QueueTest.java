@@ -84,4 +84,24 @@ public class QueueTest {
 		}
 	}
 	
+	@Test
+	public void testPeek() {
+		try {
+				q.enqueue(10);
+				q.enqueue(20);
+				q.enqueue(30);
+				q.enqueue(40);
+				q.enqueue(50);
+				
+				assertTrue("The values is correct at 0", q.peek(0) == 10);
+				assertTrue("The values is correct at 4", q.peek(4) == 50);
+		} 
+		catch (QueueFullException e) {
+			fail();
+		} 
+		catch(InvalidPositionException e)
+		{
+			fail();
+		}
+	}
 }
