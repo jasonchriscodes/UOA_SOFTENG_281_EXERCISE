@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings>
+    <projectID>109684325</projectID>
+    <instituteID>53</instituteID>
+    <locationToUpload>exercises/</locationToUpload>
+    <tag>SetOfStrings with new class StringRelation</tag>
+    <projectName>ACPStringRelation</projectName>
+    <ignore/>
+</settings>
